@@ -54,12 +54,12 @@ function returnListOfCountry(data) {
   if (data.status === 404) {
     return errorNotification(
       'not found.',
-      'Please enter a more "конкретно)" query!',
+      'Please enter a more query!',
     );
   } else if (d > 10) {
     return errorNotification(
-      'Too many "дохрена" found.',
-      'Please enter a more "конкретно)" query!',
+      'Too many found.',
+      'Please enter a more query!',
     );
   } else if (d === 1) {
     addToList(data);
